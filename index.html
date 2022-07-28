@@ -15,7 +15,7 @@
    <!-- Navbar Start -->
    <header class="container">
       <section>
-         <nav class="navbar navbar-expand-lg bg-light">
+         <nav class="navbar fixed-top navbar-expand-lg bg-light">
             <div class="container-fluid">
                <a class="navbar-brand" href="#">
                   <h2>Course_All</h2>
@@ -49,34 +49,8 @@
                      </ul>
                   </div>
                   <form class="d-flex" role="search">
+                     <button class="btn btn-warning" type="submit">Register</button>
 
-                     <!-- Button trigger modal -->
-                     <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Register
-                     </button>
-
-                     <!-- Modal -->
-                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                           <div class="modal-content">
-                              <div class="modal-header">
-                                 <h5 class="modal-title" id="exampleModalLabel">Register For Course</h5>
-                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                 This is only just beta Model. Final
-                                 design is coming....
-                              </div>
-                              <div class="modal-footer">
-                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                 <button type="button" class="btn btn-primary">Save changes</button>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
                   </form>
                </div>
             </div>
@@ -114,9 +88,9 @@
                <div class="carousel-item">
                   <img src="images/cover/cover-2.jpg" class="d-block w-100 my-banner-image" alt="..."
                      style="max-height:80vh;">
-                  <div class="carousel-caption">
-                     <h1 class="text-info">Learn without limits</h1>
-                     <p class="text-dark fw-bolder">Start, switch, or advance your career with more than 5,000
+                  <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                     <h1 class="text-info fs-1">Learn without limits</h1>
+                     <p class="text-light fs-4 fw-bolder">Start, switch, or advance your career with more than 5,000
                         courses</p>
                      <div class="btn btn-warning px-5">Register</div>
                   </div>
@@ -124,9 +98,9 @@
                <div class="carousel-item">
                   <img src="images/cover/cover-3.jpg" class="d-block w-100 my-banner-image" alt="..."
                      style="max-height:80vh;">
-                  <div class="carousel-caption d-none d-md-block">
-                     <h1 class="text-info">Learn without limits</h1>
-                     <p class="text-dark fw-bolder">Start, switch, or advance your career with more than 5,000
+                  <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                     <h1 class="text-info fs-1">Learn without limits</h1>
+                     <p class="text-light fs-4 fw-bolder">Start, switch, or advance your career with more than 5,000
                         courses</p>
                      <div class="btn btn-warning px-5">Register</div>
                   </div>
@@ -247,10 +221,10 @@
 
       </section>
 
-      <section class="container bg-info d-flex justify-content-around align-items-center p-4">
+      <section class="container bg-secondary d-flex justify-content-around align-items-center p-4">
          <div class="col-8">
-            <h2>Ready to join?</h2>
-            <p>Get personalized recommendations, updates and offers.</p>
+            <h2 class="text-white">Ready to join?</h2>
+            <p class="text-white">Get personalized recommendations, updates and offers.</p>
          </div>
          <div>
             <!-- Button trigger modal -->
@@ -264,11 +238,11 @@
                <div class="modal-dialog">
                   <div class="modal-content">
                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Register for Course Now</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                      </div>
                      <div class="modal-body">
-                        ...
+                        This is beta model. Final version is coming
                      </div>
                      <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -348,8 +322,7 @@
                <h2>Frequently asked Question</h2>
             </div>
             <div>
-               <p>It is a long established fact that a reader will be distracted by the readable
-                  content of a page when looking at its layout</p>
+               <p>Ask anything about course and Course_All</p>
             </div>
          </div>
          <div class="accordion w-75 m-3 border-1 rounded-2" id="accordionExample">
@@ -363,7 +336,7 @@
                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                     Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is that
+                     The basic difference between CSS Grid Layout and CSS Flexbox Layout is that
                      flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for
                      two-dimensional layout - rows, and columns at the same time.
                   </div>
@@ -413,9 +386,10 @@
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                      Semantic HTML elements are those that clearly describe their meaning in a human- and
-                     machine-readable way. Elements such as <header> , <footer> and <article> are all considered
-                              semantic because they accurately describe the purpose of the element and the type of
-                              content that is inside them.
+                     machine-readable way. Elements such as <code>header</code>, <code><footer></footer></code> and
+                     <code>article</code> are
+                     all considered semantic because they accurately describe the purpose of the element and the type of
+                     content that is inside them.
                   </div>
                </div>
             </div>
@@ -441,13 +415,12 @@
 
 
    </main>
-   <footer class="bg-dark text-light" style="height: 20vh;">
+   <footer class="bg-dark text-light" style="height: 25vh;">
       <div class="d-flex flex-column align-items-center justify-content-center h-100">
 
          <h2>Course_All</h2>
          <p>
-            Office 41, Zawaya Buildin, Ghala Muscat,
-            Sultanate of Oman
+            Savar 1320, Dhaka, Bangladesh
          </p>
          <div>
             <a class="mx-3" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
@@ -457,6 +430,7 @@
 
 
          </div>
+         <p><small>@2022 Hasnat Samiul</small></p>
 
       </div>
    </footer>
